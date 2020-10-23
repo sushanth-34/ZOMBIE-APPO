@@ -19,7 +19,7 @@ function setup() {
 	packageSprite=createSprite(width/2, 80, 10,10);
 	packageSprite.addImage(packageIMG)
 	packageSprite.scale=0.2
-	
+
 	helicopterSprite=createSprite(width/2, 200, 10,10);
 	helicopterSprite.addImage(helicopterIMG)
 	helicopterSprite.scale=0.6
@@ -45,17 +45,14 @@ function setup() {
 }
 
 
-
 function draw() {
   rectMode(CENTER);
   background(0);
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
-  
-}
   drawSprites();
  
-
+}
 
 function keyPressed() {
  if (keyCode === DOWN_ARROW) {
